@@ -1,0 +1,5 @@
+{
+  "name": "Super React Bros",
+  "description": "A high-fidelity recreation of the classic 1985 platformer using React, TypeScript, and HTML5 Canvas. Features custom physics engine, procedural sound synthesis, and authentic level design without external assets.",
+  "requestFramePermissions": []
+}
