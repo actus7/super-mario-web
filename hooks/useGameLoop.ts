@@ -721,8 +721,8 @@ export const useGameLoop = (canvasRef: React.RefObject<HTMLCanvasElement>) => {
              
              // Flashing effect if invulnerable
              if (m.invulnerable <= 0 || Math.floor(m.invulnerable / 2) % 2 === 0) {
-                 // Offset Y by 8 pixels because sprite is 24px tall but hitbox is 32px
-                 drawSprite(sprite, mx, my + 8, m.flip, MARIO_PALETTE);
+                 // Offset Y by 12 pixels to prevent flying appearance (32px hitbox vs 24px sprite + overlap)
+                 drawSprite(sprite, mx, my + 12, m.flip, MARIO_PALETTE);
              }
 
          } else {
